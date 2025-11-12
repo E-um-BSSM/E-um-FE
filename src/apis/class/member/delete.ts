@@ -1,7 +1,7 @@
 import { req } from "../../axiosInstance";
 import type { globalResponse } from "../../../models";
 
-export const memberDelete = {
+export const memberDELETE = {
   memberDisagree: async (
     class_id: number
   ): Promise<globalResponse<object>> => {

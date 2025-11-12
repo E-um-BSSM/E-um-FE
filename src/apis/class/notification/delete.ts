@@ -1,7 +1,7 @@
 import { req } from "../../axiosInstance";
 import type { globalResponse } from "../../../models";
 
-export const notificationDelete = {
+export const notificationDELETE = {
   classNotificationDelete: async (
     class_id: number,
     notification_id: number

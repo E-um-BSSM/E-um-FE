@@ -1,7 +1,7 @@
 import { req } from "../../axiosInstance";
 import type { assignmentRequest, assignmentResponse, globalResponse } from "../../../models/index";
 
-export const patchAssignment = {
+export const assignmentPATCH = {
   assignmentUpdate: async (
     class_id: number,
     assignment_id: number,

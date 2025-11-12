@@ -1,7 +1,7 @@
 import { req } from "../../axiosInstance";
 import type { classNotificationResponse, globalResponse } from "../../../models";
 
-export const notificationGet = {
+export const notificationGET = {
   classNotificationSearch: async (
     class_id: number
   ): Promise<globalResponse<{ notifications: classNotificationResponse[] }>> => {

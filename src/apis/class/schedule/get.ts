@@ -1,7 +1,7 @@
 import { req } from "../../axiosInstance";
 import type { classScheduleResponse, globalResponse } from "../../../models";
 
-export const scheduleGet = {
+export const scheduleGET = {
   classScheduleListSearch: async (
     class_id: number
   ): Promise<globalResponse<{ schedules: classScheduleResponse[] }>> => {

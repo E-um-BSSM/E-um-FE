@@ -1,7 +1,7 @@
 import { req } from "../../axiosInstance";
 import type { globalResponse } from "../../../models";
 
-export const scheduleDelete = {
+export const scheduleDELETE = {
   classScheduleDelete: async (
     class_id: number,
     schedule_id: number
