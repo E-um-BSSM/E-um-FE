@@ -1,0 +1,11 @@
+import { req } from "../../axiosInstance";
+import type { globalResponse, memberAcceptResponse } from "../../../models";
+
+export const memberPatch = {
+  memberAccept: async (
+    class_id: number
+  ): Promise<globalResponse<memberAcceptResponse>> => {
+    const response = await req.patch(`/classes/${class_id}/accept`);
+    return response.data;
+  },
+};
