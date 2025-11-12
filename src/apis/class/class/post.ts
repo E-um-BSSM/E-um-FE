@@ -1,0 +1,15 @@
+import { req } from "../../axiosInstance";
+import type { classRequest, classResponse, classSearchRequest, globalResponse } from "../../../models";
+
+export const classPost = {
+  classCreate: async (body: classRequest): Promise<globalResponse<classResponse>> => {
+    const response = await req.post("/classes/create", body);
+    return response.data;
+  },
+
+  classListSearch: async (body: classSearchRequest): Promise<globalResponse<{ classes: classResponse[] }>> => {
+    const response = await req.post("/classes/search", body);
+    const data = { classes: response.data.data.classes as classResponse[] };
+    return { ...response.data, data };
+  },
+};
