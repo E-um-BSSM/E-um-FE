@@ -10,7 +10,7 @@ export const classApi = {
     const response = await req.post("/classes/create", body);
     return response.data;
   },
-  classListSearch: async (body: classSearchRequest): Promise<globalResponse<{classes:classResponse[]}>> => {
+  classListSearch: async (body: classSearchRequest): Promise<globalResponse<{ classes: classResponse[] }>> => {
     const response = await req.post("/classes/search", body);
     const data = {
       classes: response.data.data.classes as classResponse[],
@@ -20,8 +20,8 @@ export const classApi = {
       data,
     };
   },
-  classUpdate: async (class_id: number,body: classRequest): Promise<globalResponse<classResponse>> => {
-    const response = await req.patch(`/classes/${class_id}`,body);
+  classUpdate: async (class_id: number, body: classRequest): Promise<globalResponse<classResponse>> => {
+    const response = await req.patch(`/classes/${class_id}`, body);
     return response.data;
   },
   classDelete: async (class_id: number): Promise<globalResponse<object>> => {
