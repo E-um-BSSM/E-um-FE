@@ -1,7 +1,7 @@
 import { req } from "../../axiosInstance";
 import type { classScheduleRequset, globalResponse } from "../../../models";
 
-export const schedulePost = {
+export const schedulePOST = {
   classScheduleRegister: async (
     class_id: number,
     body: classScheduleRequset

@@ -7,7 +7,7 @@ import type {
   globalResponse,
 } from "../../../models/index";
 
-export const postAssignment = {
+export const assignmentPOST = {
   assignmentCreate: async (class_id: number, body: assignmentRequest): Promise<globalResponse<assignmentResponse>> => {
     const response = await req.post(`/classes/${class_id}/assignments`, body);
     return response.data;

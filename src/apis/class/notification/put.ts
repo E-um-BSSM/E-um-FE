@@ -1,7 +1,7 @@
 import { req } from "../../axiosInstance";
 import type { classNotificationRequest, classNotificationResponse, globalResponse } from "../../../models";
 
-export const notificationPut = {
+export const notificationPUT = {
   classNotificationUpdate: async (
     class_id: number,
     notification_id: number,
