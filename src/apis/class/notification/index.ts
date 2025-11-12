@@ -2,7 +2,9 @@ import { req } from "../../axiosInstance";
 import type { classNotificationRequest, classNotificationResponse, globalResponse } from "../../../models/index";
 
 export const notificationApi = {
-  classNotificationSearch: async (class_id: number): Promise<globalResponse<{notification : classNotificationResponse[]}>> => {
+  classNotificationSearch: async (
+    class_id: number,
+  ): Promise<globalResponse<{ notification: classNotificationResponse[] }>> => {
     const response = await req.get(`/classes/${class_id}/notification`);
     const data = {
       notifications: response.data.data.notifications as classNotificationResponse[],
@@ -27,14 +29,11 @@ export const notificationApi = {
     const response = await req.put(`/classes/${class_id}/notification/${notification_id}`, body);
     return response.data;
   },
-  classNotificationDelete: async (
-    class_id: number,
-    notification_id: number,
-  ): Promise<globalResponse<object>> => {
+  classNotificationDelete: async (class_id: number, notification_id: number): Promise<globalResponse<object>> => {
     await req.delete(`/classes/${class_id}/notification/${notification_id}`);
-    return{
+    return {
       success: true,
-      data:{}
-    }
+      data: {},
+    };
   },
 };
