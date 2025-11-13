@@ -6,10 +6,7 @@ export const scheduleDELETE = {
     class_id: number,
     schedule_id: number
   ): Promise<globalResponse<object>> => {
-    await req.delete(`/classes/${class_id}/schedules/${schedule_id}`);
-    return {
-      success: true,
-      data: {},
-    };
+    const response = await req.delete(`/classes/${class_id}/schedules/${schedule_id}`);
+    return response.data;
   },
 };
