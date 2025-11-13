@@ -18,7 +18,7 @@ export const assignmentPOST = {
     assignment_id: number,
     body: assignmentSubmitRequest,
   ): Promise<globalResponse<assignmentSubmitResponse>> => {
-    const response = await req.post(`/classes/${class_id}/assignments/${assignment_id}`, body);
+    const response = await req.post(`/classes/${class_id}/${assignment_id}`, body);
     return response.data;
   },
 };
