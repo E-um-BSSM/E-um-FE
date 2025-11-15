@@ -1,0 +1,12 @@
+import { req } from "../../axiosInstance";
+import type { globalResponse } from "../../../models";
+
+export const notificationDELETE = {
+  classNotificationDelete: async (
+    class_id: number,
+    notification_id: number
+  ): Promise<globalResponse<object>> => {
+    const response = await req.delete(`/classes/${class_id}/notification/${notification_id}`);
+    return response.data;
+  },
+};
