@@ -7,5 +7,4 @@ export interface pustRequest {
 
 export interface pushReadRequest {
   is_read: boolean;
-  user_id: string;
 }
