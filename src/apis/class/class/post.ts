@@ -9,7 +9,6 @@ export const classPOST = {
 
   classListSearch: async (body: classSearchRequest): Promise<globalResponse<{ classes: classResponse[] }>> => {
     const response = await req.post("/classes/search", body);
-    const data = { classes: response.data.data.classes as classResponse[] };
-    return { ...response.data, data };
+    return response.data;
   },
 };
