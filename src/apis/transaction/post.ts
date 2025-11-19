@@ -2,7 +2,7 @@ import { req } from "@/apis/axiosInstance";
 import type { globalResponse } from "@/models";
 
 export const transactionPOST = {
-  dailyCompensation: async (): Promise<globalResponse<{currency: number}>> => {
+  dailyCompensation: async (): Promise<globalResponse<{ currency: number }>> => {
     const response = await req.post(`/transaction/daily`);
     return response.data;
   },
