@@ -3,3 +3,4 @@ export * from "./post";
 export * from "./push";
 export * from "./user";
 export * from "./transaction";
+export * from "./class";
