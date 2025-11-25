@@ -38,8 +38,6 @@ export const Description = styled.p`
  overflow: hidden;
  color: var(--Text-text-primary, #0F172A);
  text-overflow: ellipsis;
-
- /* Body/Paragraph Nomal */
  font-family: Pretendard;
  font-size: 1.25rem;
  font-style: normal;
