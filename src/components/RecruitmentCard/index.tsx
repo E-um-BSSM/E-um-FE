@@ -1,5 +1,5 @@
-import { Container, Description, Info, Profile } from "@/components/MentoringFindCard/style";
-import Detail from "@/components/Detail";
+import { Container, Description, Info, Profile } from "@/components/RecruitmentCard/style";
+import Detail from "@/components/RecruitmentDetail";
 import DifficultyLevel from "@/components/DifficultyLevel";
 
 export default function Card({ name, description, level }: { name: string; description: string; level: number }) {
