@@ -1,4 +1,4 @@
-export * from "./Detail";
+export * from "./RecruitmentDetail";
 export * from "./DifficultyLevel";
-export * from "./MentoringFindCard"
+export * from "./RecruitmentCard"
 export * from "./WriteGenerate";

@@ -1,6 +1,6 @@
 import { BodyContainer,ContentContainer,WriteGenerateContainer,DialogContainer,Title,Description, FindContainer, FindDialogContainer,AllViwe,CardContainer } from "@/pages/app/mentoring/CreateRecruitmentPage/style";
 import WriteGenerate from "@/components/WriteGenerate";
-import MentoringFindCard from "@/components/MentoringFindCard";
+import MentoringFindCard from "@/components/RecruitmentCard";
 
 export default function CreateRecruitmentPage() {
   const cardList = [
